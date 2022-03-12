@@ -1,0 +1,57 @@
+
+.teste{
+    /* background-color: #000 !important; */
+}
+
+.list-group-item > .label{
+    margin-right: 1em;
+}
+.msg-ok{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: green;
+    color: #fff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  .msg-warning {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: darkred !important;
+    color: #fff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  /*///////////////////////////////HIDE ME //////////////////////////////////////*/
+  
+  #hideMe {
+    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+  }
+  @-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+  }
